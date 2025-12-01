@@ -127,6 +127,8 @@
             <th>ID</th>
             <th>Nama</th>
             <th>Harga</th>
+            <th>Stock</th>
+            <th>Toko</th>
             <th>Deskripsi</th>
             <th>Aksi</th>
         </tr>
@@ -136,6 +138,8 @@
             <td>{{ $p->id }}</td>
             <td>{{ $p->name }}</td>
             <td>Rp {{ number_format($p->price, 0, ',', '.') }}</td>
+            <td>{{ $p->stock }}</td>
+            <td>{{ $p->toko }}</td>
             <td>{{ $p->description }}</td>
             <td>
                 <a href="{{ route('products.edit', $p->id) }}" class="btn-edit">Edit</a>

@@ -112,6 +112,12 @@
 
         <label>Harga Produk</label>
         <input type="number" name="price" placeholder="Harga Produk" required>
+        
+        <label>Stock Barang</label>
+        <input type="number" name="stock" placeholder="Stock Barang" required>
+        
+        <label>Toko</label>
+        <input type="Text" name="toko" placeholder="Toko Product" required>
 
         <label>Deskripsi</label>
         <textarea name="description" placeholder="Deskripsi Produk" rows="4" required></textarea>
