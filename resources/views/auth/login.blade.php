@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #5a2fc2, #8a4fff, #d66efd);
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #ffc107 100%);
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -22,89 +22,108 @@
         .card {
             background: #ffffff;
             width: 380px;
-            border-radius: 18px;
-            padding: 35px 40px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-            animation: fadeIn 0.8s ease;
+            border-radius: 20px;
+            padding: 40px 45px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideUp 0.8s ease;
+            border-top: 5px solid #ffc107;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
         h2 {
             text-align: center;
-            margin-bottom: 18px;
-            color: #4b1fa8;
-            font-size: 27px;
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, #2a5298 0%, #ffc107 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 32px;
+            font-weight: 700;
         }
 
         label {
-            font-weight: 600;
-            color: #333;
+            font-weight: 700;
+            color: #2a5298;
+            display: block;
+            margin-bottom: 8px;
         }
 
         input {
             width: 100%;
-            padding: 12px;
-            border-radius: 10px;
-            border: 1.5px solid #d1c9e8;
+            padding: 14px;
+            border-radius: 12px;
+            border: 2px solid #ffc107;
             outline: none;
-            margin-top: 5px;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
             font-size: 15px;
-            transition: 0.2s;
+            transition: 0.3s;
+            box-sizing: border-box;
         }
 
         input:focus {
-            border-color: #8a4fff;
-            box-shadow: 0 0 8px rgba(138,79,255,0.4);
+            border-color: #2a5298;
+            box-shadow: 0 0 12px rgba(42, 82, 152, 0.3);
+            background: #f0f8ff;
         }
 
         button {
             width: 100%;
-            padding: 12px;
+            padding: 14px;
             font-size: 16px;
             border: none;
-            background: #7a34ff;
+            background: linear-gradient(135deg, #2a5298 0%, #ffc107 100%);
             color: white;
-            font-weight: 600;
-            border-radius: 10px;
+            font-weight: 700;
+            border-radius: 12px;
             cursor: pointer;
             transition: 0.3s;
+            margin-top: 10px;
         }
 
         button:hover {
-            background: #5b22d1;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(42, 82, 152, 0.4);
         }
 
         .register-link {
             text-align: center;
-            margin-top: 18px;
+            margin-top: 20px;
             font-size: 14px;
         }
 
         .register-link a {
-            color: #7a34ff;
+            color: #2a5298;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
+            border-bottom: 2px solid #ffc107;
+            padding-bottom: 2px;
+            transition: 0.3s;
+        }
+
+        .register-link a:hover {
+            color: #ffc107;
+            border-bottom: 2px solid #2a5298;
         }
 
         .alert {
-            padding: 10px;
-            background: #f8d7da;
-            color: #842029;
+            padding: 14px;
+            background: #fff3cd;
+            color: #856404;
+            border-left: 4px solid #ffc107;
             border-radius: 8px;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             font-size: 14px;
+            font-weight: 500;
         }
 
         .success {
             background: #d1e7dd;
             color: #0f5132;
+            border-left: 4px solid #198754;
         }
     </style>
 </head>

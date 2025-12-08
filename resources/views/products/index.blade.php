@@ -5,105 +5,138 @@
     <title>Daftar Produk</title>
     <style>
         body {
-            background: #f3f5fa;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            min-height: 100vh;
         }
 
         .navbar {
-            background: #4a76e2;
+            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 50%, #ffc107 100%);
             color: white;
-            padding: 15px 30px;
-            font-size: 20px;
+            padding: 20px 35px;
+            font-size: 22px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            border-bottom: 4px solid #ffc107;
         }
 
         .navbar a {
             color: white;
-            margin-left: 20px;
+            margin-left: 25px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: 0.3s;
         }
 
         .navbar a:hover {
-            text-decoration: underline;
+            background: rgba(255, 193, 7, 0.3);
+            transform: translateY(-2px);
         }
 
         .container {
             width: 90%;
-            max-width: 1000px;
-            margin: 40px auto;
+            max-width: 1100px;
+            margin: 50px auto;
             background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            border-top: 6px solid #ffc107;
         }
 
         h2 {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
+            color: #2a5298;
+            font-size: 28px;
+            font-weight: 700;
         }
 
         .btn-add {
-            background: #4a76e2;
+            background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
             color: white;
-            padding: 10px 15px;
+            padding: 12px 20px;
             text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: 0.3s;
+            display: inline-block;
         }
 
         .btn-add:hover {
-            background: #345dcc;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 193, 7, 0.3);
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 15px;
+            margin-top: 20px;
         }
 
         table th {
-            background: #eef2ff;
+            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+            color: white;
+            font-weight: 700;
+            padding: 15px;
         }
 
         table, th, td {
-            border: 1px solid #d1d1d1;
+            border: 1px solid #e0e0e0;
+        }
+
+        table tr:nth-child(even) {
+            background: #f5f9ff;
+        }
+
+        table tr:hover {
+            background: #eef5ff;
         }
 
         th, td {
             text-align: center;
-            padding: 10px;
+            padding: 12px;
+            color: #333;
         }
 
         .btn-edit {
-            background: #ffc107;
-            padding: 6px 12px;
+            background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+            padding: 8px 14px;
             text-decoration: none;
-            color: black;
-            border-radius: 5px;
-            font-weight: bold;
+            color: white;
+            border-radius: 8px;
+            font-weight: 700;
+            transition: 0.3s;
+            display: inline-block;
+            border: none;
         }
 
         .btn-edit:hover {
-            background: #e0a800;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 193, 7, 0.3);
         }
 
         .btn-delete {
-            background: #dc3545;
-            padding: 6px 12px;
+            background: #ff6b6b;
+            padding: 8px 14px;
             border: none;
             color: white;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
-            font-weight: bold;
+            font-weight: 700;
+            transition: 0.3s;
         }
 
         .btn-delete:hover {
-            background: #b52a36;
+            background: #ee5a52;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255, 107, 107, 0.3);
         }
     </style>
 </head>
